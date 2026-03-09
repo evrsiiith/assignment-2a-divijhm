@@ -1,0 +1,427 @@
+{
+  "articles": [
+    {
+      "_objectname": "SceneManager",
+      "_sid": null,
+      "_slabel": null,
+      "source": null,
+      "_IsHidden": 0,
+      "_enumcount": 0,
+      "_Is3DObject": 0,
+      "HasChild": 0,
+      "Children": null,
+      "shape": "Plane",
+      "Transform_initialpos": {
+        "x": "0",
+        "y": "-5",
+        "z": "0"
+      },
+      "Transform_initialrotation": {
+        "x": "0",
+        "y": "0",
+        "z": "0"
+      },
+      "Transform_objectscale": {
+        "x": "0.1",
+        "y": "1",
+        "z": "0.1"
+      },
+      "XRRigidObject": {
+        "value": "0",
+        "mass": "0",
+        "dragfriction": "0",
+        "angulardrag": "0",
+        "Isgravityenable": "false",
+        "IsKinematic": "false",
+        "CanInterpolate": "0",
+        "CollisionPolling": "none"
+      },
+      "states": [
+        "setup",
+        "running"
+      ],
+      "context_img_source": null
+    },
+    {
+      "_objectname": "Tome",
+      "_sid": null,
+      "_slabel": null,
+      "source": null,
+      "_IsHidden": 0,
+      "_enumcount": 0,
+      "_Is3DObject": 0,
+      "HasChild": 0,
+      "Children": null,
+      "shape": "Cube",
+      "Transform_initialpos": {
+        "x": "2.5",
+        "y": "2.78",
+        "z": "-0.5"
+      },
+      "Transform_initialrotation": {
+        "x": "0",
+        "y": "330",
+        "z": "0"
+      },
+      "Transform_objectscale": {
+        "x": "0.5",
+        "y": "0.7",
+        "z": "0.1"
+      },
+      "XRRigidObject": {
+        "value": "0",
+        "mass": "0",
+        "dragfriction": "0",
+        "angulardrag": "0",
+        "Isgravityenable": "false",
+        "IsKinematic": "false",
+        "CanInterpolate": "0",
+        "CollisionPolling": "none"
+      },
+      "states": [
+        "locked",
+        "open"
+      ],
+      "context_img_source": null
+    },
+    {
+      "_objectname": "BloodstoneKey",
+      "_sid": null,
+      "_slabel": null,
+      "source": null,
+      "_IsHidden": 0,
+      "_enumcount": 0,
+      "_Is3DObject": 0,
+      "HasChild": 0,
+      "Children": null,
+      "shape": "rust_key",
+      "Transform_initialpos": {
+        "x": "1.5",
+        "y": "-10",
+        "z": "0"
+      },
+      "Transform_initialrotation": {
+        "x": "0",
+        "y": "45",
+        "z": "0"
+      },
+      "Transform_objectscale": {
+        "x": "3",
+        "y": "3",
+        "z": "3"
+      },
+      "XRRigidObject": {
+        "value": "1",
+        "mass": "0.2",
+        "dragfriction": "0",
+        "angulardrag": "0",
+        "Isgravityenable": "true",
+        "IsKinematic": "false",
+        "CanInterpolate": "0",
+        "CollisionPolling": "discrete"
+      },
+      "states": [
+        "inactive",
+        "active",
+        "held"
+      ],
+      "context_img_source": "Assets/Resources/GoldKey.prefab"
+    },
+    {
+      "_objectname": "IronKey",
+      "_sid": null,
+      "_slabel": null,
+      "source": null,
+      "_IsHidden": 0,
+      "_enumcount": 0,
+      "_Is3DObject": 0,
+      "HasChild": 0,
+      "Children": null,
+      "shape": "rust_key",
+      "Transform_initialpos": {
+        "x": "1.5",
+        "y": "2.51",
+        "z": "0"
+      },
+      "Transform_initialrotation": {
+        "x": "90",
+        "y": "44.999",
+        "z": "0"
+      },
+      "Transform_objectscale": {
+        "x": "3",
+        "y": "3",
+        "z": "3"
+      },
+      "XRRigidObject": {
+        "value": "0",
+        "mass": "0",
+        "dragfriction": "0",
+        "angulardrag": "0",
+        "Isgravityenable": "false",
+        "IsKinematic": "false",
+        "CanInterpolate": "0",
+        "CollisionPolling": "none"
+      },
+      "states": [
+        "idle",
+        "held",
+        "transmuted"
+      ],
+      "context_img_source": "Assets/Rust Key/Prefabs/rust_key.prefab"
+    },
+    {
+      "_objectname": "RedVial",
+      "_sid": null,
+      "_slabel": null,
+      "source": null,
+      "_IsHidden": 0,
+      "_enumcount": 0,
+      "_Is3DObject": 0,
+      "HasChild": 0,
+      "Children": null,
+      "shape": "Flask_01",
+      "Transform_initialpos": {
+        "x": "-0.8",
+        "y": "2.437",
+        "z": "0.3"
+      },
+      "Transform_initialrotation": {
+        "x": "270",
+        "y": "0",
+        "z": "0"
+      },
+      "Transform_objectscale": {
+        "x": "10",
+        "y": "10",
+        "z": "10"
+      },
+      "XRRigidObject": {
+        "value": "1",
+        "mass": "0.1",
+        "dragfriction": "0",
+        "angulardrag": "0",
+        "Isgravityenable": "true",
+        "IsKinematic": "false",
+        "CanInterpolate": "0",
+        "CollisionPolling": "discrete"
+      },
+      "states": [
+        "ready",
+        "poured"
+      ],
+      "context_img_source": "Assets/Resources/RedVial.prefab"
+    },
+    {
+      "_objectname": "GreenVial",
+      "_sid": null,
+      "_slabel": null,
+      "source": null,
+      "_IsHidden": 0,
+      "_enumcount": 0,
+      "_Is3DObject": 0,
+      "HasChild": 0,
+      "Children": null,
+      "shape": "Flask_01",
+      "Transform_initialpos": {
+        "x": "-1.5",
+        "y": "2.437",
+        "z": "0.3"
+      },
+      "Transform_initialrotation": {
+        "x": "270",
+        "y": "0",
+        "z": "0"
+      },
+      "Transform_objectscale": {
+        "x": "10",
+        "y": "10",
+        "z": "10"
+      },
+      "XRRigidObject": {
+        "value": "1",
+        "mass": "0.1",
+        "dragfriction": "0",
+        "angulardrag": "0",
+        "Isgravityenable": "true",
+        "IsKinematic": "false",
+        "CanInterpolate": "0",
+        "CollisionPolling": "discrete"
+      },
+      "states": [
+        "ready",
+        "poured"
+      ],
+      "context_img_source": "Assets/Resources/GreenVial.prefab"
+    },
+    {
+      "_objectname": "GasValve",
+      "_sid": null,
+      "_slabel": null,
+      "source": null,
+      "_IsHidden": 0,
+      "_enumcount": 0,
+      "_Is3DObject": 0,
+      "HasChild": 0,
+      "Children": null,
+      "shape": "Cylinder",
+      "Transform_initialpos": {
+        "x": "0.75",
+        "y": "2.585",
+        "z": "0"
+      },
+      "Transform_initialrotation": {
+        "x": "0",
+        "y": "0",
+        "z": "90"
+      },
+      "Transform_objectscale": {
+        "x": "0.25",
+        "y": "0.35",
+        "z": "0.25"
+      },
+      "XRRigidObject": {
+        "value": "0",
+        "mass": "0",
+        "dragfriction": "0",
+        "angulardrag": "0",
+        "Isgravityenable": "false",
+        "IsKinematic": "false",
+        "CanInterpolate": "0",
+        "CollisionPolling": "none"
+      },
+      "states": [
+        "off",
+        "on"
+      ],
+      "context_img_source": null
+    },
+    {
+      "_objectname": "Cauldron",
+      "_sid": null,
+      "_slabel": null,
+      "source": null,
+      "_IsHidden": 0,
+      "_enumcount": 0,
+      "_Is3DObject": 0,
+      "HasChild": 0,
+      "Children": null,
+      "shape": "Cylinder",
+      "Transform_initialpos": {
+        "x": "0",
+        "y": "2.76",
+        "z": "0"
+      },
+      "Transform_initialrotation": {
+        "x": "0",
+        "y": "0",
+        "z": "0"
+      },
+      "Transform_objectscale": {
+        "x": "1",
+        "y": "0.7",
+        "z": "1"
+      },
+      "XRRigidObject": {
+        "value": "0",
+        "mass": "0",
+        "dragfriction": "0",
+        "angulardrag": "0",
+        "Isgravityenable": "false",
+        "IsKinematic": "false",
+        "CanInterpolate": "0",
+        "CollisionPolling": "none"
+      },
+      "states": [
+        "empty",
+        "greened",
+        "heated",
+        "primed",
+        "failed"
+      ],
+      "context_img_source": null
+    },
+    {
+      "_objectname": "Table",
+      "_sid": null,
+      "_slabel": null,
+      "source": null,
+      "_IsHidden": 0,
+      "_enumcount": 0,
+      "_Is3DObject": 0,
+      "HasChild": 0,
+      "Children": null,
+      "shape": "Workbench",
+      "Transform_initialpos": {
+        "x": "0",
+        "y": "0",
+        "z": "0"
+      },
+      "Transform_initialrotation": {
+        "x": "0",
+        "y": "0",
+        "z": "0"
+      },
+      "Transform_objectscale": {
+        "x": "1",
+        "y": "1",
+        "z": "1"
+      },
+      "XRRigidObject": {
+        "value": "0",
+        "mass": "0",
+        "dragfriction": "0",
+        "angulardrag": "0",
+        "Isgravityenable": "false",
+        "IsKinematic": "false",
+        "CanInterpolate": "0",
+        "CollisionPolling": "none"
+      },
+      "states": [
+        "ready"
+      ],
+      "context_img_source": "Assets/BK_AlchemistHouse/Prefabs/Furniture/Workbench.prefab"
+    },
+    {
+      "_objectname": "Floor",
+      "_sid": null,
+      "_slabel": null,
+      "source": null,
+      "_IsHidden": 0,
+      "_enumcount": 0,
+      "_Is3DObject": 0,
+      "HasChild": 0,
+      "Children": null,
+      "shape": "Plane",
+      "Transform_initialpos": {
+        "x": "0",
+        "y": "0",
+        "z": "0"
+      },
+      "Transform_initialrotation": {
+        "x": "0",
+        "y": "0",
+        "z": "0"
+      },
+      "Transform_objectscale": {
+        "x": "5",
+        "y": "1",
+        "z": "5"
+      },
+      "XRRigidObject": {
+        "value": "0",
+        "mass": "0",
+        "dragfriction": "0",
+        "angulardrag": "0",
+        "Isgravityenable": "false",
+        "IsKinematic": "false",
+        "CanInterpolate": "0",
+        "CollisionPolling": "none"
+      },
+      "states": [
+        "ready"
+      ],
+      "context_img_source": null
+    }
+  ]
+}

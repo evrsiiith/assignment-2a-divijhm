@@ -1,0 +1,205 @@
+{
+  "behaviors": [
+    {
+      "id": "SceneInit",
+      "event": "OnCondition",
+      "actors": ["SceneManager"],
+      "precondition": {
+        "equals": ["Self.state", "setup"]
+      },
+      "action": {
+        "runAlgorithm": "InitScene"
+      },
+      "postcondition": {
+        "equals": ["Self.state", "running"]
+      }
+    },
+    {
+      "id": "GreenVialInteract",
+      "event": "OnCondition",
+      "actors": ["GreenVial"],
+      "precondition": {
+        "all": [
+          { "equals": ["Self.state", "ready"] },
+          { "runAlgorithm": "IsObjectClicked", "params": { "obj": "Self" } }
+        ]
+      },
+      "action": {
+        "runAlgorithm": "HandleGreenVialClick"
+      },
+      "postcondition": {
+        "equals": ["Self.state", "poured"]
+      }
+    },
+    {
+      "id": "ValveInteract",
+      "event": "OnCondition",
+      "actors": ["GasValve"],
+      "precondition": {
+        "all": [
+          { "equals": ["Self.state", "off"] },
+          { "runAlgorithm": "IsObjectClicked", "params": { "obj": "Self" } }
+        ]
+      },
+      "action": {
+        "runAlgorithm": "HandleValveClick"
+      },
+      "postcondition": {
+        "equals": ["Self.state", "on"]
+      }
+    },
+    {
+      "id": "CauldronHeat",
+      "event": "OnCondition",
+      "actors": ["Cauldron"],
+      "precondition": {
+        "all": [
+          { "equals": ["Self.state", "greened"] },
+          { "equals": ["GasValve.state", "on"] }
+        ]
+      },
+      "action": {
+        "runAlgorithm": "HeatCauldron"
+      },
+      "postcondition": {
+        "equals": ["Self.state", "heated"]
+      }
+    },
+    {
+      "id": "RedVialInteract",
+      "event": "OnCondition",
+      "actors": ["RedVial"],
+      "precondition": {
+        "all": [
+          { "equals": ["Self.state", "ready"] },
+          { "runAlgorithm": "IsObjectClicked", "params": { "obj": "Self" } }
+        ]
+      },
+      "action": {
+        "runAlgorithm": "HandleRedVialClick"
+      },
+      "postcondition": {
+        "equals": ["Self.state", "poured"]
+      }
+    },
+    {
+      "id": "IronKeyPickup",
+      "event": "OnCondition",
+      "actors": ["IronKey"],
+      "precondition": {
+        "all": [
+          { "equals": ["Self.state", "idle"] },
+          { "runAlgorithm": "IsObjectClicked", "params": { "obj": "Self" } }
+        ]
+      },
+      "action": {
+        "runAlgorithm": "PickUpIronKey"
+      },
+      "postcondition": {
+        "equals": ["Self.state", "held"]
+      }
+    },
+    {
+      "id": "IronKeyDrop",
+      "event": "OnCondition",
+      "actors": ["IronKey"],
+      "precondition": {
+        "all": [
+          { "equals": ["Self.state", "held"] },
+          { "runAlgorithm": "IsObjectClicked", "params": { "obj": "Self" } }
+        ]
+      },
+      "action": {
+        "runAlgorithm": "PutDownIronKey"
+      },
+      "postcondition": {
+        "equals": ["Self.state", "idle"]
+      }
+    },
+    {
+      "id": "KeyDropInCauldron",
+      "event": "OnCondition",
+      "actors": ["Cauldron"],
+      "precondition": {
+        "all": [
+          { "equals": ["Self.state", "primed"] },
+          { "equals": ["IronKey.state", "held"] },
+          { "runAlgorithm": "IsObjectClicked", "params": { "obj": "Self" } }
+        ]
+      },
+      "action": {
+        "runAlgorithm": "TransmuteKey"
+      },
+      "postcondition": {
+        "equals": ["BloodstoneKey.state", "active"]
+      }
+    },
+    {
+      "id": "IronKeyOnTome",
+      "event": "OnCondition",
+      "actors": ["Tome"],
+      "precondition": {
+        "all": [
+          { "equals": ["Self.state", "locked"] },
+          { "equals": ["IronKey.state", "held"] },
+          { "runAlgorithm": "IsObjectClicked", "params": { "obj": "Self" } }
+        ]
+      },
+      "action": {
+        "runAlgorithm": "DenyTomeAccess"
+      }
+    },
+    {
+      "id": "BloodstoneKeyInteract",
+      "event": "OnCondition",
+      "actors": ["BloodstoneKey"],
+      "precondition": {
+        "all": [
+          { "equals": ["Self.state", "active"] },
+          { "runAlgorithm": "IsObjectClicked", "params": { "obj": "Self" } }
+        ]
+      },
+      "action": {
+        "runAlgorithm": "PickUpBloodstoneKey"
+      },
+      "postcondition": {
+        "equals": ["Self.state", "held"]
+      }
+    },
+    {
+      "id": "BloodstoneKeyDrop",
+      "event": "OnCondition",
+      "actors": ["BloodstoneKey"],
+      "precondition": {
+        "all": [
+          { "equals": ["Self.state", "held"] },
+          { "runAlgorithm": "IsObjectClicked", "params": { "obj": "Self" } }
+        ]
+      },
+      "action": {
+        "runAlgorithm": "PutDownBloodstoneKey"
+      },
+      "postcondition": {
+        "equals": ["Self.state", "active"]
+      }
+    },
+    {
+      "id": "TomeUnlock",
+      "event": "OnCondition",
+      "actors": ["Tome"],
+      "precondition": {
+        "all": [
+          { "equals": ["Self.state", "locked"] },
+          { "equals": ["BloodstoneKey.state", "held"] },
+          { "runAlgorithm": "IsObjectClicked", "params": { "obj": "Self" } }
+        ]
+      },
+      "action": {
+        "runAlgorithm": "OpenTome"
+      },
+      "postcondition": {
+        "equals": ["Self.state", "open"]
+      }
+    }
+  ]
+}
