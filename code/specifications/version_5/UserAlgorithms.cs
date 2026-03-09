@@ -381,7 +381,7 @@ namespace Version_5
         /// <summary>
         /// Swaps all renderers on a vial GameObject to the VialEmpty material,
         /// giving a clear visual signal that the vial has been poured out.
-        /// The material must live at Assets/Resources/VialEmpty.mat.
+        /// The material must live at VReqDV/Imported Assets/Resources/VialEmpty.mat.
         /// </summary>
         private static void SwapVialToEmpty(GameObject vial)
         {

@@ -125,7 +125,7 @@
         "active",
         "held"
       ],
-      "context_img_source": "Assets/Resources/GoldKey.prefab"
+      "context_img_source": "Assets/VReqDV/Imported Assets/Resources/GoldKey.prefab"
     },
     {
       "_objectname": "IronKey",
@@ -168,7 +168,7 @@
         "held",
         "transmuted"
       ],
-      "context_img_source": "Assets/Rust Key/Prefabs/rust_key.prefab"
+      "context_img_source": "Assets/VReqDV/Imported Assets/Rust Key/Prefabs/rust_key.prefab"
     },
     {
       "_objectname": "RedVial",
@@ -210,7 +210,7 @@
         "ready",
         "poured"
       ],
-      "context_img_source": "Assets/Resources/RedVial.prefab"
+      "context_img_source": "Assets/VReqDV/Imported Assets/Resources/RedVial.prefab"
     },
     {
       "_objectname": "GreenVial",
@@ -252,7 +252,7 @@
         "ready",
         "poured"
       ],
-      "context_img_source": "Assets/Resources/GreenVial.prefab"
+      "context_img_source": "Assets/VReqDV/Imported Assets/Resources/GreenVial.prefab"
     },
     {
       "_objectname": "GasValve",
@@ -380,7 +380,7 @@
       "states": [
         "ready"
       ],
-      "context_img_source": "Assets/BK_AlchemistHouse/Prefabs/Furniture/Workbench.prefab"
+      "context_img_source": "Assets/VReqDV/Imported Assets/BK_AlchemistHouse/Prefabs/Furniture/Workbench.prefab"
     },
     {
       "_objectname": "Floor",
